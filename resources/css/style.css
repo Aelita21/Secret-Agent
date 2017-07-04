@@ -1,12 +1,13 @@
-
+@media only screen and (max-width:960px) {
+html,
+body {
+  font-size: 16px;
+}
+}
 body {
   font-size: 18px;
   font-family: Helvetica;
   color: white;
-}
-.site-container {
-  min-width: 960px;
-
 }
 header {
   border: 2px solid;
@@ -19,7 +20,7 @@ header {
   padding: 0.66rem;
 }
 header img {
-  margin-left: 5rem;
+  margin-left: 15rem;
   width: 2rem;
   height: 1.5rem;
 }
@@ -27,26 +28,35 @@ header h4 {
   margin-left: 1.5rem;
   font-size: 1rem;
 }
+@media screen only and (min-with: 470px) {
+  .banner {
+    height: 10rem;
+  }
+}
 .banner {
   border: 2px solid;
   background-image: url("../images/moto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 26rem;
+  height: 25rem;
 
 }
 .new {
   display: block;
-  border: 2px solid;
   width: 20rem;
   height: 9rem;
-  margin-left: 9rem;
+  margin-left: 15rem;
   margin-top: 9rem;
   background-color: black;
   color: white;
   font-weight: bold;
   padding: 2rem 3rem;
+}
+@media screen only and (min-width: 480px) {
+  .new h1 {
+    font-size: 1rem;
+  }
 }
 .new h1 {
   font-size: 2rem;
@@ -55,7 +65,7 @@ header h4 {
   font-size: 1rem;
 }
 .nav {
-  border: 2px solid;
+
   display: flex;
   background-color: firebrick;
   align-items: center;
@@ -67,40 +77,53 @@ header h4 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  width: 960px;
   margin: auto;
+
+}
+@media only screen and (max-width: 960px) {
+  .item {
+    min-width: 47%;
+  }
 }
 .item {
   border: 4px solid black;
   display: block;
-  min-width: 30%;
+  width: 30%;
+  margin-top: 3rem;
 }
 .item img {
   height: 9rem;
   display: block;
-
+  padding: 2rem;
+  margin: auto;
 }
 .description {
   background-color: black;
   display: block;
-  align-content: center;
+  text-align: center;
+  padding: 0.5rem 0;
 }
 .info {
-  border: 4px solid black;
   margin-top: 3rem;
   margin-bottom: 4rem;
-  width: 35%
+  width: 35%;
+  align-items: flex-start;
 }
 .info span {
   background-color: black;
-  width: 100%;
+  display: block;
+  text-align: left;
+  padding: 1rem 0 1rem 2rem;
 }
 .info p {
   color: black;
 }
 footer {
   background-color: black;
-  margin: auto;
-  height: 5rem;
+  padding-left: 15rem;
+  height: 10rem;
   display: flex;
   align-items: center;
+
 }
