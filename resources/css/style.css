@@ -1,16 +1,12 @@
-@media only screen and (max-width:960px) {
-html,
-body {
-  font-size: 16px;
-}
-}
+
+
 body {
   font-size: 18px;
   font-family: Helvetica;
   color: white;
 }
+
 header {
-  border: 2px solid;
   display: flex;
   background-color: black;
   width: 98%;
@@ -27,11 +23,6 @@ header img {
 header h4 {
   margin-left: 1.5rem;
   font-size: 1rem;
-}
-@media screen only and (min-with: 470px) {
-  .banner {
-    height: 10rem;
-  }
 }
 .banner {
   border: 2px solid;
@@ -53,24 +44,26 @@ header h4 {
   font-weight: bold;
   padding: 2rem 3rem;
 }
-@media screen only and (min-width: 480px) {
-  .new h1 {
-    font-size: 1rem;
-  }
-}
 .new h1 {
   font-size: 2rem;
 }
 .new h3 {
   font-size: 1rem;
 }
-.nav {
 
+.nav {
   display: flex;
   background-color: firebrick;
   align-items: center;
   justify-content: space-around;
   padding: 0.75rem 0;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile {
+  display: none;
 }
 .main {
   display: flex;
@@ -79,21 +72,17 @@ header h4 {
   flex-wrap: wrap;
   width: 960px;
   margin: auto;
-
-}
-@media only screen and (max-width: 960px) {
-  .item {
-    min-width: 47%;
-  }
 }
 .item {
   border: 4px solid black;
   display: block;
   width: 30%;
+  height: auto;
   margin-top: 3rem;
 }
 .item img {
   height: 9rem;
+  width: 10rem;
   display: block;
   padding: 2rem;
   margin: auto;
@@ -108,7 +97,7 @@ header h4 {
   margin-top: 3rem;
   margin-bottom: 4rem;
   width: 35%;
-  align-items: flex-start;
+
 }
 .info span {
   background-color: black;
@@ -126,4 +115,79 @@ footer {
   display: flex;
   align-items: center;
 
+}
+@media only screen and (max-width: 1024px) {
+
+  header img {
+    margin-left: 0;
+  }
+  .new {
+    margin-left: 0;
+  }
+  .nav {
+    display: none;
+  }
+  .main {
+    justify-content: space-between;
+  }
+  .item {
+    display: block;
+    width: 47%;
+    height: auto;
+  }
+  .three {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    background-color: firebrick;
+    text-align: center;
+    padding: 0.75rem;
+  }
+  .info {
+    width: 35%;
+    display: block;
+    justify-content: space-between;
+  }
+  footer {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 470px) {
+
+  .banner {
+    height: 15rem;
+  }
+  .new {
+    display: block;
+    margin-top: 10rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    height: 5rem;
+
+  }
+  .new h3{
+    font-size: 0.77rem;
+  }
+  .new h1{
+    font-size: 1rem;
+  }
+.main {
+  display: block;
+}
+  .two {
+    display: none;
+  }
+  .three {
+    display: none;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    padding-left: 3rem;
+  }
 }
